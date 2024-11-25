@@ -1,2 +1,23 @@
-<h1>Welcome to our website!!!</h1>
-<p>Welcome to kashir-matamdari.github.io!!!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My React App</title>
+  <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    const e = React.createElement;
+
+    function App() {
+      return e('div', null, [
+        e('h1', { key: '1' }, 'Welcome to kashir matamdari website'),
+        e('p', { key: '2' }, 'This is our website!!!')
+      ]);
+    }
+
+    ReactDOM.render(e(App), document.getElementById('root'));
+  </script>
+</body>
+</html>
